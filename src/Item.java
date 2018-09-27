@@ -36,6 +36,7 @@ public class Item {
     return priorityLevel;
   }
 
+  // Generate random number between 1 and 3 for priority level
   public void setPriorityLevel() {
     Random rand = new Random();
     int priority = rand.nextInt(3) + 1;

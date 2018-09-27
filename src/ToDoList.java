@@ -19,6 +19,7 @@ public class ToDoList {
     this.items = items;
   }
 
+  // Returns a count of items for given priority
   public int getPriorityCount(int priority) {
     int count = 0;
 
@@ -31,6 +32,7 @@ public class ToDoList {
     return count;
   }
 
+  // Returns a count of items for value of "isDone" (can be true or false)
   public int getDoneCount(Boolean isDone) {
     int count = 0;
 

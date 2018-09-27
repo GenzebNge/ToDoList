@@ -22,6 +22,7 @@ public class Main {
     System.out.println("Let's create your To Do List!\n");
 
     do {
+      // Create new item
       Item item = new Item();
 
       System.out.print("Enter name of item: ");
@@ -30,6 +31,7 @@ public class Main {
       System.out.print("Enter category of item: ");
       category = in.nextLine();
 
+      // Call setPriorityLevel() method to randomly generate priority level
       item.setPriorityLevel();
       priority = item.getPriorityLevel();
       System.out.println("Your assigned priority level is: " + priority);
@@ -46,6 +48,7 @@ public class Main {
       System.out.println();
 
     } while(!quit.equalsIgnoreCase("quit") && !quit.equalsIgnoreCase("q"));
+    // Loop terminates when user enters "quit" or "q"
 
     return toDoList;
   }
